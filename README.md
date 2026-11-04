@@ -25,10 +25,6 @@ cp .env.example .env             # ajuste DATABASE_URL
 uvicorn app.main:app --reload
 ```
 
-- API: http://localhost:8000
-- Docs (Swagger): http://localhost:8000/docs
-- Health check: http://localhost:8000/health
-
 ## Testes
 
 ```bash
