@@ -6,8 +6,8 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     app_name: str = "Quantum HidroSmart API"
     debug: bool = False
-    database_url: str = "postgresql+psycopg2://postgres:postgres@localhost:5432/hidrosmart"
-    cors_origins: str = "http://localhost:3000"
+    database_url: str = ""
+    cors_origins: str = ""
 
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
 
